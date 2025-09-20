@@ -6,7 +6,7 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
 
   const handleStartGame = () => {
-    navigate('/game');
+    navigate('/in-game');
   };
 
   return (
@@ -22,8 +22,8 @@ const Home: React.FC = () => {
         <section className="game-intro">
           <h3>Về Trò Chơi</h3>
           <p>
-            Khám phá quy luật mâu thuẫn trong triết học thông qua những tình huống thực tế 
-            giữa phát triển kinh tế và bảo vệ môi trường. Mỗi quyết định của bạn sẽ dẫn đến 
+            Khám phá quy luật mâu thuẫn trong triết học thông qua những tình huống thực tế
+            giữa phát triển kinh tế và bảo vệ môi trường. Mỗi quyết định của bạn sẽ dẫn đến
             những hệ quả khác nhau và tạo nên câu chuyện riêng.
           </p>
         </section>
@@ -53,18 +53,13 @@ const Home: React.FC = () => {
 
         {/* Start Game Button */}
         <div className="start-game-section">
-          <button 
+          <button
             className="start-game-btn"
             onClick={handleStartGame}
           >
             Bắt Đầu Trò Chơi
           </button>
         </div>
-
-        {/* Footer */}
-        <footer className="home-footer">
-          <p>Dự án môn Triết học - Khám phá quy luật mâu thuẫn</p>
-        </footer>
       </div>
     </div>
   );
