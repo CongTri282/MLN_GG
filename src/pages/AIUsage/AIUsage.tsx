@@ -50,23 +50,11 @@ const AIUsage: React.FC = () => {
     ],
     definitions: {
       "Quy Luật Mâu Thuẫn": {
-        definition: "Học thuyết về sự thống nhất của các mặt đối lập - là bản chất của phép biện chứng duy vật. Sự phân chia của một tổng thể duy nhất và nhận thức về các bộ phận mâu thuẫn của nó là bản chất của phép biện chứng",
-        source: "Lenin, V.I. (1914-1916). Philosophical Notebooks. Collected Works, Volume 38. Moscow: Progress Publishers",
-        url: "https://www.marxists.org/archive/lenin/works/1914/notebooks/",
-        quote: "The splitting of a single whole and the cognition of its contradictory parts … is the essence … of dialectics."
+        definition: "Quy luật thống nhất và đấu tranh của các mặt đối lập - một trong ba quy luật cơ bản của phép biện chứng duy vật và là quy luật quan trọng nhất, là hạt nhân của phép biện chứng. Quy luật này vạch ra nguồn gốc, động lực của sự vận động, phát triển",
+        source: "Wikipedia - Quy luật thống nhất và đấu tranh giữa các mặt đối lập",
+        url: "https://vi.wikipedia.org/wiki/Quy_lu%E1%BA%ADt_th%E1%BB%91ng_nh%E1%BA%A5t_v%C3%A0_%C4%91%E1%BA%A5u_tranh_gi%E1%BB%AFa_c%C3%A1c_m%E1%BA%B7t_%C4%91%E1%BB%91i_l%E1%BA%ADp",
+        quote: "Nguồn gốc của sự phát triển chính là mâu thuẫn và việc giải quyết mâu thuẫn nội tại trong bản thân mỗi sự vật, hiện tượng."
       },
-      "Game-based Learning": {
-        definition: "Phương pháp giáo dục sử dụng trò chơi để tạo ra môi trường học tập tương tác và hấp dẫn",
-        source: "Prensky, M. (2001). Digital Game-Based Learning. McGraw-Hill",
-        url: "https://www.marcprensky.com/writing/Prensky%20-%20Digital%20Game-Based%20Learning-Ch1.pdf",
-        quote: ""
-      },
-      "Environmental-Economic Trade-offs": {
-        definition: "Sự đánh đổi giữa phát triển kinh tế và bảo vệ môi trường trong quá trình phát triển bền vững",
-        source: "Stern, N. (2007). The Economics of Climate Change. Cambridge University Press",
-        url: "https://www.cambridge.org/core/books/economics-of-climate-change/",
-        quote: ""
-      }
     }
   };
 
@@ -115,20 +103,10 @@ const AIUsage: React.FC = () => {
         description: "Hướng dẫn sử dụng TypeScript programming language"
       },
       {
-        title: "Lenin's Philosophical Notebooks",
-        url: "https://www.marxists.org/archive/lenin/works/1914/notebooks/",
-        description: "Tác phẩm kinh điển của Lenin về phép biện chứng duy vật và quy luật mâu thuẫn"
+        title: "Wikipedia - Quy luật thống nhất và đấu tranh giữa các mặt đối lập",
+        url: "https://vi.wikipedia.org/wiki/Quy_lu%E1%BA%ADt_th%E1%BB%91ng_nh%E1%BA%A5t_v%C3%A0_%C4%91%E1%BA%A5u_tranh_gi%E1%BB%AFa_c%C3%A1c_m%E1%BA%B7t_%C4%91%E1%BB%91i_l%E1%BA%ADp",
+        description: "Bài viết Wikipedia tiếng Việt về quy luật mâu thuẫn trong triết học Mác-Lênin"
       },
-      {
-        title: "Digital Game-Based Learning",
-        url: "https://www.marcprensky.com/writing/Prensky%20-%20Digital%20Game-Based%20Learning-Ch1.pdf",
-        description: "Nghiên cứu về phương pháp học tập dựa trên trò chơi số"
-      },
-      {
-        title: "The Economics of Climate Change",
-        url: "https://www.cambridge.org/core/books/economics-of-climate-change/",
-        description: "Nghiên cứu về mâu thuẫn giữa phát triển kinh tế và bảo vệ môi trường"
-      }
     ]
   };
 
