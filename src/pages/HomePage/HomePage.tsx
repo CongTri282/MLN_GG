@@ -38,9 +38,9 @@ const HomePage: React.FC = () => {
 
               <div className="bg-white/80 rounded-xl p-4 sm:p-6 border-l-4 border-indigo-500 mx-auto max-w-4xl overflow-hidden">
                 <blockquote className="text-lg sm:text-base md:text-sm lg:text-base xl:text-lg italic text-indigo-800 mb-3 leading-relaxed md:whitespace-nowrap md:overflow-hidden md:text-ellipsis lg:whitespace-normal">
-                  "Sự đối lập không phải là cái gì phải giải quyết ngay lập tức, mà là phần cần thiết để chúng ta phát triển."
+                  "Mâu thuẫn là nguồn gốc của mọi vận động và sức sống; chỉ có mâu thuẫn mới sinh ra cái mới."
                 </blockquote>
-                <cite className="text-xs sm:text-sm text-gray-600 font-semibold">— Hegel</cite>
+                <cite className="text-xs sm:text-sm text-gray-600 font-semibold">Khoa học Logic - Hegel</cite>
               </div>
 
             </div>
