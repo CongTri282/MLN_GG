@@ -51,9 +51,15 @@ const AIUsage: React.FC = () => {
     definitions: {
       "Quy Luật Mâu Thuẫn": {
         definition: "Quy luật thống nhất và đấu tranh của các mặt đối lập - một trong ba quy luật cơ bản của phép biện chứng duy vật và là quy luật quan trọng nhất, là hạt nhân của phép biện chứng. Quy luật này vạch ra nguồn gốc, động lực của sự vận động, phát triển",
-        source: "Wikipedia - Quy luật thống nhất và đấu tranh giữa các mặt đối lập",
-        url: "https://vi.wikipedia.org/wiki/Quy_lu%E1%BA%ADt_th%E1%BB%91ng_nh%E1%BA%A5t_v%C3%A0_%C4%91%E1%BA%A5u_tranh_gi%E1%BB%AFa_c%C3%A1c_m%E1%BA%B7t_%C4%91%E1%BB%91i_l%E1%BA%ADp",
-        quote: "Nguồn gốc của sự phát triển chính là mâu thuẫn và việc giải quyết mâu thuẫn nội tại trong bản thân mỗi sự vật, hiện tượng."
+        source: "Luật Minh Khuê - Thuyết trình về quy luật mâu thuẫn",
+        url: "https://luatminhkhue.vn/thuyet-trinh-ve-quy-luat-mau-thuan.aspx",
+        quote: "Quy luật mâu thuẫn là quy luật cơ bản nhất của phép biện chứng duy vật, vạch ra nguồn gốc và động lực của sự vận động, phát triển."
+      },
+      "Mâu Thuẫn Môi Trường - Kinh Tế": {
+        definition: "Mâu thuẫn giữa phát triển kinh tế và bảo vệ môi trường sinh thái - hai phạm trù khác nhau nhưng có mối quan hệ khăng khít với nhau, đều phục vụ lợi ích của con người nhưng là hai mặt của một vấn đề",
+        source: "LuanVan.net.vn - Mâu thuẫn giữa phát triển kinh tế và bảo vệ môi trường sinh thái ở Việt Nam hiện nay",
+        url: "https://luanvan.net.vn/luan-van/mau-thuan-giua-phat-trien-kinh-te-va-bao-ve-moi-truong-sinh-thai-o-viet-nam-hien-nay-41362/",
+        quote: "Môi trường và kinh tế chúng là hai phạm trù khác nhau nhưng chúng lại có mối quan hệ khăng khít với nhau, chúng đều phục vụ lợi ích của con người nhưng chúng là hai mặt của một vấn đề."
       },
     }
   };
@@ -103,9 +109,14 @@ const AIUsage: React.FC = () => {
         description: "Hướng dẫn sử dụng TypeScript programming language"
       },
       {
-        title: "Wikipedia - Quy luật thống nhất và đấu tranh giữa các mặt đối lập",
-        url: "https://vi.wikipedia.org/wiki/Quy_lu%E1%BA%ADt_th%E1%BB%91ng_nh%E1%BA%A5t_v%C3%A0_%C4%91%E1%BA%A5u_tranh_gi%E1%BB%AFa_c%C3%A1c_m%E1%BA%B7t_%C4%91%E1%BB%91i_l%E1%BA%ADp",
-        description: "Bài viết Wikipedia tiếng Việt về quy luật mâu thuẫn trong triết học Mác-Lênin"
+        title: "Luật Minh Khuê - Thuyết trình về quy luật mâu thuẫn",
+        url: "https://luatminhkhue.vn/thuyet-trinh-ve-quy-luat-mau-thuan.aspx",
+        description: "Tài liệu thuyết trình về quy luật mâu thuẫn trong triết học Mác-Lênin"
+      },
+      {
+        title: "LuanVan.net.vn - Mâu thuẫn giữa phát triển kinh tế và bảo vệ môi trường sinh thái ở Việt Nam hiện nay",
+        url: "https://luanvan.net.vn/luan-van/mau-thuan-giua-phat-trien-kinh-te-va-bao-ve-moi-truong-sinh-thai-o-viet-nam-hien-nay-41362/",
+        description: "Luận văn nghiên cứu về mâu thuẫn giữa phát triển kinh tế và bảo vệ môi trường sinh thái ở Việt Nam"
       },
     ]
   };
