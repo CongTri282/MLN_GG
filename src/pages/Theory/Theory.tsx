@@ -28,7 +28,7 @@ const Theory: React.FC = () => {
             </li>
             <li>
               🧩 Có nhiều loại mâu thuẫn: cơ bản – không cơ bản, đối kháng –
-              không đối kháng.
+              không đối kháng, chủ yếu - thứ yếu, bên trong - bên ngoài.
             </li>
             <li>
               🔄 Quá trình phát triển là quá trình phát sinh, phát triển và giải
