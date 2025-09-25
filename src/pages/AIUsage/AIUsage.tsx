@@ -35,6 +35,8 @@ const AIUsage: React.FC = () => {
       description: "AI assistant được sử dụng để phát triển toàn bộ dự án game 'Quy Luật Mâu Thuẫn'",
       icon: "🤖",
       category: "Development Assistant",
+      definition: "Large Language Model (LLM) được phát triển bởi Anthropic, có khả năng hiểu và tạo ra nội dung văn bản phức tạp",
+      definitionSource: "Anthropic. (2024). Claude 3.5 Sonnet. https://www.anthropic.com/claude",
       usage: [
         "Thiết kế kiến trúc ứng dụng React + TypeScript",
         "Tạo nội dung game scenarios và storylines",
@@ -47,6 +49,8 @@ const AIUsage: React.FC = () => {
       description: "AI-powered code editor hỗ trợ trong quá trình coding và debugging",
       icon: "⚡",
       category: "Code Editor",
+      definition: "Intelligent code editor sử dụng AI để cung cấp code completion, refactoring và debugging assistance",
+      definitionSource: "Cursor. (2024). AI Code Editor. https://cursor.sh/",
       usage: [
         "Code completion và suggestions",
         "Refactoring và optimization",
@@ -59,13 +63,33 @@ const AIUsage: React.FC = () => {
   const projectDetails = {
     name: "Quy Luật Mâu Thuẫn - Môi Trường vs Kinh Tế",
     description: "Một game tương tác dạy về triết học thông qua việc đưa ra các quyết định cân bằng giữa phát triển kinh tế và bảo vệ môi trường",
-    techStack: ["React 19", "TypeScript", "Vite", "Tailwind CSS", "React Router"],
+    techStack: [
+      { name: "React 19", source: "https://react.dev/blog/2024/12/05/react-19" },
+      { name: "TypeScript", source: "https://www.typescriptlang.org/docs/" },
+      { name: "Vite", source: "https://vitejs.dev/guide/" },
+      { name: "Tailwind CSS", source: "https://tailwindcss.com/docs" },
+      { name: "React Router", source: "https://reactrouter.com/en/main" }
+    ],
     features: [
       "10 scenarios thực tế về mâu thuẫn môi trường-kinh tế",
       "Hệ thống scoring và tracking choices",
       "Responsive design cho mọi thiết bị",
       "Game state management với localStorage"
-    ]
+    ],
+    definitions: {
+      "Quy Luật Mâu Thuẫn": {
+        definition: "Quy luật thống nhất và đấu tranh của các mặt đối lập - một trong ba quy luật cơ bản của phép biện chứng duy vật và là quy luật quan trọng nhất, là hạt nhân của phép biện chứng. Quy luật này vạch ra nguồn gốc, động lực của sự vận động, phát triển",
+        source: "Luật Minh Khuê - Thuyết trình về quy luật mâu thuẫn",
+        url: "https://luatminhkhue.vn/thuyet-trinh-ve-quy-luat-mau-thuan.aspx",
+        quote: "Quy luật mâu thuẫn là quy luật cơ bản nhất của phép biện chứng duy vật, vạch ra nguồn gốc và động lực của sự vận động, phát triển."
+      },
+      "Mâu Thuẫn Môi Trường - Kinh Tế": {
+        definition: "Mâu thuẫn giữa phát triển kinh tế và bảo vệ môi trường sinh thái - hai phạm trù khác nhau nhưng có mối quan hệ khăng khít với nhau, đều phục vụ lợi ích của con người nhưng là hai mặt của một vấn đề",
+        source: "LuanVan.net.vn - Mâu thuẫn giữa phát triển kinh tế và bảo vệ môi trường sinh thái ở Việt Nam hiện nay",
+        url: "https://luanvan.net.vn/luan-van/mau-thuan-giua-phat-trien-kinh-te-va-bao-ve-moi-truong-sinh-thai-o-viet-nam-hien-nay-41362/",
+        quote: "Môi trường và kinh tế chúng là hai phạm trù khác nhau nhưng chúng lại có mối quan hệ khăng khít với nhau, chúng đều phục vụ lợi ích của con người nhưng chúng là hai mặt của một vấn đề."
+      },
+    }
   };
 
   const academicIntegrity = {
@@ -101,7 +125,27 @@ const AIUsage: React.FC = () => {
         title: "MIT AI Ethics Guidelines",
         url: "https://www.media.mit.edu/ai-ethics/",
         description: "Hướng dẫn đạo đức AI của MIT cho nghiên cứu và giáo dục"
-      }
+      },
+      {
+        title: "React Documentation",
+        url: "https://react.dev/",
+        description: "Tài liệu chính thức của React framework"
+      },
+      {
+        title: "TypeScript Handbook",
+        url: "https://www.typescriptlang.org/docs/",
+        description: "Hướng dẫn sử dụng TypeScript programming language"
+      },
+      {
+        title: "Luật Minh Khuê - Thuyết trình về quy luật mâu thuẫn",
+        url: "https://luatminhkhue.vn/thuyet-trinh-ve-quy-luat-mau-thuan.aspx",
+        description: "Tài liệu thuyết trình về quy luật mâu thuẫn trong triết học Mác-Lênin"
+      },
+      {
+        title: "LuanVan.net.vn - Mâu thuẫn giữa phát triển kinh tế và bảo vệ môi trường sinh thái ở Việt Nam hiện nay",
+        url: "https://luanvan.net.vn/luan-van/mau-thuan-giua-phat-trien-kinh-te-va-bao-ve-moi-truong-sinh-thai-o-viet-nam-hien-nay-41362/",
+        description: "Luận văn nghiên cứu về mâu thuẫn giữa phát triển kinh tế và bảo vệ môi trường sinh thái ở Việt Nam"
+      },
     ]
   };
 
@@ -145,11 +189,21 @@ const AIUsage: React.FC = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-700 mb-3">Tech Stack:</h4>
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="space-y-2 mb-6">
                   {projectDetails.techStack.map((tech, idx) => (
-                    <span key={idx} className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">
-                      {tech}
-                    </span>
+                    <div key={idx} className="flex items-center justify-between bg-indigo-50 rounded-lg p-3">
+                      <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">
+                        {tech.name}
+                      </span>
+                      <a 
+                        href={tech.source} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs text-indigo-600 hover:text-indigo-800 underline"
+                      >
+                        Nguồn
+                      </a>
+                    </div>
                   ))}
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4">
@@ -158,6 +212,37 @@ const AIUsage: React.FC = () => {
                     Giúp người học hiểu về quy luật mâu thuẫn trong triết học thông qua
                     việc trải nghiệm các tình huống thực tế và đưa ra quyết định có trách nhiệm.
                   </p>
+                </div>
+                
+                <div className="bg-blue-50 rounded-lg p-4 mt-4">
+                  <h4 className="font-semibold text-gray-700 mb-3">Định nghĩa các thuật ngữ:</h4>
+                  <div className="space-y-3">
+                    {Object.entries(projectDetails.definitions).map(([term, info], idx) => (
+                      <div key={idx} className="border-l-4 border-blue-400 pl-4">
+                        <h5 className="font-semibold text-gray-700 text-sm">{term}</h5>
+                        <p className="text-xs text-gray-600 mb-2">{info.definition}</p>
+                        {info.quote && info.quote.trim() !== "" && (
+                          <div className="bg-blue-50 rounded p-2 mb-2">
+                            <p className="text-xs text-gray-700 italic">
+                              <span className="font-semibold">Trích dẫn: </span>
+                              "{info.quote}"
+                            </p>
+                          </div>
+                        )}
+                        <div className="text-xs text-gray-500">
+                          <span className="italic">Nguồn: </span>
+                          <a 
+                            href={info.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:text-blue-800 underline"
+                          >
+                            {info.source}
+                          </a>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -179,7 +264,24 @@ const AIUsage: React.FC = () => {
                     </span>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-6">{tool.description}</p>
+                <p className="text-gray-600 mb-4">{tool.description}</p>
+                
+                <div className="bg-indigo-50 rounded-lg p-4 mb-4">
+                  <h4 className="font-semibold text-gray-700 mb-2 text-sm">Định nghĩa:</h4>
+                  <p className="text-sm text-gray-600 mb-2">{tool.definition}</p>
+                  <div className="text-xs text-gray-500">
+                    <span className="italic">Nguồn: </span>
+                    <a 
+                      href={tool.definitionSource} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-indigo-600 hover:text-indigo-800 underline"
+                    >
+                      {tool.definitionSource}
+                    </a>
+                  </div>
+                </div>
+                
                 <div>
                   <h4 className="font-semibold text-gray-700 mb-3">Cách sử dụng trong dự án:</h4>
                   <ul className="space-y-2">
