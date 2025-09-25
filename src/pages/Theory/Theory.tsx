@@ -1,9 +1,46 @@
 import React from "react";
 import "./Theory.css";
+import SEO from "../../components/SEO/SEO";
 
 const Theory: React.FC = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Lý Thuyết Quy Luật Mâu Thuẫn - Triết Học Biện Chứng Duy Vật",
+    "description": "Tìm hiểu chi tiết về lý thuyết quy luật mâu thuẫn trong triết học biện chứng duy vật, bao gồm các khái niệm cơ bản, ví dụ thực tế và ứng dụng trong cuộc sống.",
+    "author": {
+      "@type": "Organization",
+      "name": "MLN Education Platform"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MLN",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mln-game.com/logo.png"
+      }
+    },
+    "datePublished": "2025-09-22",
+    "dateModified": "2025-09-22",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mln-game.com/theory"
+    },
+    "articleSection": "Philosophy Education",
+    "keywords": ["quy luật mâu thuẫn", "triết học biện chứng", "duy vật biện chứng", "lý thuyết triết học"]
+  };
+
   return (
     <div className="theory-bg-wrapper">
+      <SEO
+        title="Lý Thuyết Quy Luật Mâu Thuẫn - Triết Học Biện Chứng Duy Vật | MLN"
+        description="Tìm hiểu chi tiết về lý thuyết quy luật mâu thuẫn trong triết học biện chứng duy vật, bao gồm các khái niệm cơ bản, ví dụ thực tế và ứng dụng trong cuộc sống."
+        keywords="lý thuyết quy luật mâu thuẫn, triết học biện chứng duy vật, khái niệm mâu thuẫn, ví dụ mâu thuẫn, triết học Hegel, giáo dục triết học"
+        ogUrl="https://mln-game.com/theory"
+        canonical="https://mln-game.com/theory"
+        type="article"
+        structuredData={structuredData}
+      />
       <div className="theory-container">
         <h2>Kiến thức nền tảng</h2>
 

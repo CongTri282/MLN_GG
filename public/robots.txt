@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mln-game.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow certain file types
+Disallow: /src/
+Disallow: /*.json$
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.tsx$
+Disallow: /*.ts$
+
+# Allow important assets
+Allow: /assets/
+Allow: /images/
+Allow: /og-image.jpg
+Allow: /twitter-image.jpg
+Allow: /favicon.ico
+Allow: /vite.svg

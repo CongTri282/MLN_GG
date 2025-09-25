@@ -1,6 +1,34 @@
 import React from 'react';
+import SEO from '../../components/SEO/SEO';
 
 const AIUsage: React.FC = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Sử Dụng AI Trong Phát Triển Game Quy Luật Mâu Thuẫn",
+    "description": "Tìm hiểu cách AI được sử dụng trong quá trình phát triển game giáo dục về quy luật mâu thuẫn, bao gồm các công cụ AI và phương pháp ứng dụng.",
+    "author": {
+      "@type": "Organization",
+      "name": "MLN Education Platform"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MLN",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mln-game.com/logo.png"
+      }
+    },
+    "datePublished": "2025-09-22",
+    "dateModified": "2025-09-22",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mln-game.com/ai-usage"
+    },
+    "articleSection": "AI Technology",
+    "keywords": ["AI trong giáo dục", "Claude Sonnet", "phát triển game", "công nghệ AI", "trí tuệ nhân tạo"]
+  };
+
   const aiToolsUsed = [
     {
       name: "Claude Sonnet 4",
@@ -127,7 +155,7 @@ const AIUsage: React.FC = () => {
                 <div className="bg-gray-50 rounded-lg p-4">
                   <h4 className="font-semibold text-gray-700 mb-2">Mục tiêu giáo dục:</h4>
                   <p className="text-sm text-gray-600">
-                    Giúp người học hiểu về quy luật mâu thuẫn trong triết học thông qua 
+                    Giúp người học hiểu về quy luật mâu thuẫn trong triết học thông qua
                     việc trải nghiệm các tình huống thực tế và đưa ra quyết định có trách nhiệm.
                   </p>
                 </div>
@@ -184,7 +212,7 @@ const AIUsage: React.FC = () => {
                 </div>
               ))}
             </div>
-            
+
             <div className="bg-white rounded-lg p-6">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Tài Liệu Tham Khảo</h3>
               <div className="space-y-3">
@@ -192,9 +220,9 @@ const AIUsage: React.FC = () => {
                   <div key={index} className="border-l-4 border-green-400 pl-4">
                     <h4 className="font-semibold text-gray-700">{source.title}</h4>
                     <p className="text-sm text-gray-600 mb-1">{source.description}</p>
-                    <a 
-                      href={source.url} 
-                      target="_blank" 
+                    <a
+                      href={source.url}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-indigo-600 hover:text-indigo-800"
                     >
@@ -254,8 +282,8 @@ const AIUsage: React.FC = () => {
         <section className="text-center bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Kết Luận</h2>
           <p className="text-xl mb-8 opacity-90 max-w-4xl mx-auto">
-            Dự án này minh chứng cho việc sử dụng AI một cách có trách nhiệm trong giáo dục. 
-            AI đã được sử dụng như một công cụ hỗ trợ để tạo ra nội dung giáo dục có ý nghĩa, 
+            Dự án này minh chứng cho việc sử dụng AI một cách có trách nhiệm trong giáo dục.
+            AI đã được sử dụng như một công cụ hỗ trợ để tạo ra nội dung giáo dục có ý nghĩa,
             đồng thời duy trì tính liêm chính học thuật và sự giám sát của con người.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -265,6 +293,16 @@ const AIUsage: React.FC = () => {
           </div>
         </section>
       </div>
+
+      <SEO
+        title="Sử Dụng AI Trong Phát Triển Game Giáo Dục | MLN - Quy Luật Mâu Thuẫn"
+        description="Tìm hiểu cách AI được sử dụng trong quá trình phát triển game giáo dục về quy luật mâu thuẫn, bao gồm các công cụ AI và phương pháp ứng dụng có trách nhiệm."
+        keywords="AI trong giáo dục, Claude Sonnet, phát triển game, công nghệ AI, trí tuệ nhân tạo, AI có trách nhiệm, giáo dục số"
+        ogUrl="https://mln-game.com/ai-usage"
+        canonical="https://mln-game.com/ai-usage"
+        type="article"
+        structuredData={structuredData}
+      />
     </div>
   );
 };
